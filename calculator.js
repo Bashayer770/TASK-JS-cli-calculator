@@ -7,23 +7,23 @@ console.log(`Hi, I'm ${name}.`);
 
 function calcul(result) {
   var _firstNumber_ = prompt("Please enter the first number:");
-  var _secondNumber = prompt("Please enter the second number");
-  var operation = prompt("Please choose the operation");
+  var _secondNumber = prompt("Please enter the second number:");
+  var operation = prompt("Please choose the operation:");
 
   if (operation == "+") {
     result = Number(_firstNumber_) + Number(_secondNumber);
-  } else if ((operation = !null)) {
-    result = "Error";
-  } else if ((_firstNumber_ = !null)) {
-    result = "Error";
-  } else if ((_secondNumber = !null)) {
-    result = "Error";
   } else if (operation == "/") {
     result = Number(_firstNumber_) / Number(_secondNumber);
   } else if (operation == "*") {
     result = Number(_firstNumber_) * Number(_secondNumber);
-  } else if (oper == "-") {
+  } else if (operation == "-") {
     result = Number(_firstNumber_) - Number(_secondNumber);
+  } else if (operation != null) {
+    result = "Error";
+  } else if (_firstNumber_ != null) {
+    result = "Error";
+  } else if (_secondNumber != null) {
+    result = "Error";
   }
 
   console.log(result);
